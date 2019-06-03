@@ -120,7 +120,7 @@ function check(){
         return value >= dificuldade;
     })
     const endGame = arenaPixels.filter(function(value){return value>=1 && value<dificuldade}).length == arenaPixels.length;
-    console.log(endGame);
+    // console.log(endGame);
     if(!endGame){
         if(colisao != false){
             // console.log("bateu");
