@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Walking Square</title>
+    <style>
+        html{
+            height: 100%;
+        }
+        body{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: black; */
+            overflow: auto;
+            flex-direction: column;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            /* padding: 40px; */
+            margin:0;
+            background-color: lightyellow;
+        }
+        table{
+            border-collapse: collapse;
+            /* border-radius: 10px; */
+            box-shadow: 0px 0px 200px rgba(0,0,0,0.1);
+        }
+        td{
+            width: 30px;
+            height: 30px;
+            border: 1px solid #eee;
+            text-align: center;
+            vertical-align: center;
+            position: relative;
+        }
+        .index{
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            font-size: 10px;
+        }
+        td.current{
+            border: 2px solid #333;
+        }
+        #interface{
+            padding: 30px;
+            font-size: 1.3rem;
+        }
+        .msg{
+            position: absolute;
+            height: 100%;
+            min-width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 99;
+            font-size: 4rem;
+
+        }
+        #container{
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pontuacao{
+            padding: 30px;
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <div id="interface"></div>
+    <div id="container">
+        <div class="msg"></div>
+        <div id="arena"></div>
+    </div>
+    <div class="pontuacao"></div>
+    <script src="script.js"></script>
+</body>
+</html>
